@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .2, 0, 1);
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
+body {
+	background-color: #010101;
+	font-family: raleway_f, sans-serif;
+	line-height: 1.55;
+}
+
+
+.main-header {
+	position: relative;
+    background-color: black;
+    
+}
+.main-header::after {
+	content: '';
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: calc(var(--index) * 10);
+	/* background-image: url(../img/grass-9223.png); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	bottom: calc(var(--index) * -4.5);
+}
+.layers {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.layer {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	will-change: transform;
+	z-index: 2;
+	transition: var(--transition);
+}
+
+.main-header .header__menu{
+    list-style: none;
+    display: flex;
+    background-color: black;
+    position: relative;
+    max-height: 3.5vh;
+}
+
+.layer .splitter {
+    max-height: 2vh;
+}
+
+
+.header__list li{
+    display: inline;
+    margin-left: 20px;
+    
+}
+
+
+.box{
+    margin-top: 0.25vh;
+}
+
+
+.header__link{
+    color: var(--text);
+    font-size: calc(var(--index) / 1.675);
+    text-transform: uppercase;
+	font-weight: 500;
+    list-style: none;
+}
+
+.layers__base {
+	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+	z-index: 0;
+    
+}
+.layers__middle {
+	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    
+}
+.layers__front {
+	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+}
+.layer__header {
+	z-index: 1;
+	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	transition: var(--transition);
+	will-change: transform;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: var(--text);
+	text-shadow: 0 0 15px #9d822b;
+    
+}
+.layers__title {
+	font-size: calc(var(--index) * 1.85);
+	letter-spacing: calc(var(--index) / 3.25);
+}
+.layers__caption {
+	font-size: calc(var(--index) / 1.175);
+	letter-spacing: calc(var(--index) / 3.5);
+	margin-top: calc(var(--index) * -.75);
+    margin-bottom: 35px;
+}
+.main-article {
+	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	/* Update: */
+	top: -1px;
+	z-index: 10;
+}
+.main-article__header {
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .8);
+	letter-spacing: calc(var(--index) / 7.5);
+	transform: var(--main-article-transform);
+	transition: var(--transition);
+	will-change: transform;
+}
+.main-article__paragraph {
+	max-width: calc(var(--index) * 30);
+	font-size: calc(var(--index) * .6);
+	margin-top: calc(var(--index) / 1.25);
+	transform: var(--main-article-transform);
+	transition: var(--transition);
+	will-change: transform;
+}
+.content {
+	will-change: transform;
+}
+.copy {
+	position: absolute;
+	bottom: calc(var(--index) * 2.5);
+	opacity: .45;
+	font-size: calc(var(--index) * .75);
+	letter-spacing: calc(var(--index) / 37.5);
+}
+
+.splitter {
+    min-height: 40px;
+    background-color: black;
+}
+
+
+
+.introduction{
+    background-image: url("../img/forest.png");    
+	min-height: 100vh;
+	background-size: cover;	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+}
+
+.contentbox{
+    background-color: black;
+    display: flex;
+    min-height: 50vh;
+    align-self: center;
+    opacity: 0.9;
+    will-change: transform;
+}
+
+.contentbox .title {
+    font-size: calc(var(--index) / 1.175);
+    color: var(--text);
+    text-transform: uppercase;
+	font-weight: 500;
+    opacity: 1;
+    align-self: center
+}
+
+.contentbox .subtitle {
+    font-size: calc(var(--index) / 2.175);
+    margin-top: 2.5vh;
+    color: var(--text);
+}
+
+.img{
+    align-self: center;
+}
+
+
+.img img{
+    align-self: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    opacity: 1;
+    
+}
+
+a {
+    text-decoration: none !important;
+}
+
+:any-link:hover {
+    color: var(--text);
+
+
+  }
+
+
+.bigsection {
+    height: 3000px;
+    will-change: transform;
+}

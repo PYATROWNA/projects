@@ -1,0 +1,1382 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    display: block;
+    height: 350px;
+    background-image: linear-gradient(180deg, #FFF 0%, #FFF 46.35%, rgba(255, 255, 255, 0.00) 100%);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+body {
+    background-color: #BAE2FC;
+
+}
+
+header {
+    width: 1310px;
+    height: 727px;
+    flex-shrink: 0;
+    background: var(--day-colors-blue-50, #F9FBFD);
+    margin: 0 auto;
+}
+
+
+
+.header .container {
+    max-width: 1310px;
+    overflow: hidden;
+    background-color: var(--day-colors-blue-50, #F9FBFD);
+    padding: 0;
+    
+}
+
+
+
+.header .title {
+    color: var(--day-text-primary, #212121);
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 30px;
+}
+
+.header .subtitle {
+    color: var(--day-text-primary, #212121);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+.qrbox {
+    display: flex;
+    max-width: 425px;
+    position: relative;
+}
+
+.qrbox  .appbuttons {
+    margin-left: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.applebutton {
+    margin-bottom: 10px;
+}
+
+.qr {
+    max-width: 199px;
+}
+
+.arrowText{
+    display: none;
+}
+
+.ellipsemiddle {
+    border: 0px none;
+    height: 1068px;
+    width: 1068px;
+    position: absolute;
+    z-index: 0;
+
+    filter: blur(150px);
+    top: -360px;
+    left: 120px;
+    opacity: 0.4;
+    color:#F2FDE5;
+
+
+
+    border-radius: 1069px;
+
+    background: var(--day-colors-green-100, #F2FDE5);
+
+}
+
+.ellipseleft {
+    width: 868px;
+    height: 868px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -350px;
+    top: -240px;
+    border-radius: 868px;
+    opacity: 0.05;
+    background: var(--day-colors-blue-500, #0094E7);
+    filter: blur(125px);
+    z-index: 0;
+}
+
+.textbox {
+    padding-top: 90px;
+}
+
+.wrapper .textbox,
+.wrapper .appbox {
+    margin-left: 65px;
+    z-index: 50;
+    position: relative;
+}
+
+
+.navigationbox {
+    display: flex;
+    justify-content: center;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-image: url('../img/Ellipse/links/Ellipse721.svg');
+    background-position: center;
+    margin-right: 50px;
+}
+
+.nav1 {
+    margin-left: 45px;
+}
+
+.nav2,
+.nav3,
+.nav4 {
+    margin-right: 50px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.box {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.text {
+    color: var(--day-text-colorful-secondary, #1653A4);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    top: calc(50% + 51px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+
+.arrowbox {
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 239px;
+    
+    
+    width: 137.973px;
+    height: 165.005px;
+    flex-shrink: 0;
+
+}
+
+.handbox {
+    position: absolute;
+    margin-top: -274px;
+    margin-left: 360px;
+}
+
+.section1 .titletbox .title {
+    color: #00275A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 139.13% */
+    
+}
+
+.section1 .titletbox .title h2 {
+    font-family: Poppins;
+    color: #00275A;
+text-align: center;
+font-family: Poppins;
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 139.13% */
+width: 786px;
+margin: 0 auto;
+padding-top: 90px;
+}
+
+.section1 .subtitle {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin: 30px 0 120px 0;
+}
+
+.section1 .contentbox .title {
+    width: 475px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #0094E7;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+}
+
+.section1 .container {
+    max-width: 1310px;
+    overflow: hidden;
+    background-color: var(--day-colors-blue-50, #FFF);
+    padding: 0;
+    height: 1040px;
+}
+
+.section1 .contentbox .content {
+    width: 540px;
+    height: 62px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.section1 .contentbox {
+    display: flex;
+}
+
+.section1 .content {
+    margin: 0px 0px 12px 138px;
+}
+
+.section1 .content .title {
+    margin-bottom: 34px;
+}
+
+.section1 .content ul {
+    margin-bottom: 12px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 187.5% */
+    width: 475px;
+}
+
+.section1 .imgbox {
+    margin: -63px 0px 0px 267px;
+}
+
+.checkIcon {
+    position: relative;
+}
+
+.checkIcon::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://i.alza.cz/Foto/or/lp/aplikace/img/i-check-blue.svg');
+    background-size: cover;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrowDown {
+    position: relative;
+}
+
+.arrowDown::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/icons/Arrowdown.svg');
+    background-size: cover;
+    margin-left: 35px;
+    position: absolute;
+    left: -30px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section1 .qrbox {
+    margin-top: 30px;
+}
+
+.section2 .titletbox .title {
+    width: 974px;
+    color: #00275A;
+text-align: center;
+font-family: Poppins;
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 139.13% */
+margin: 0 auto;
+padding-bottom: 30px;
+}
+
+
+.section2 .titletbox .title h3 {
+    font-family: Poppins;
+    color: #00275A;
+text-align: center;
+font-family: Poppins;
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 139.13% */
+width: 786px;
+margin: 0 auto;
+padding-top: 90px;
+}
+
+
+.section2 .subtitle {
+    width: 974px;
+    color: #212121;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    padding-bottom: 30px;
+}
+
+.section2 .contentbox .title {
+    width: 475px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #0094E7;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+}
+
+.section2 .container {
+    max-width: 1310px;
+    overflow: hidden;
+    background-color: var(--day-colors-blue-50, #F7FCF6);
+    padding: 0;
+    height: 1040px;
+}
+
+.section2 .contentbox .content {
+    width: 540px;
+    height: 62px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 89px 0px  0px 167px;
+}
+
+.section2 .contentbox {
+    display: flex;
+}
+
+.section2 .content {
+    margin: 0px 0px 12px 138px;
+}
+
+.section2 .content .title {
+    margin-bottom: 34px;
+}
+
+.section2 .content ul {
+    margin-bottom: 12px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 187.5% */
+    width: 475px;
+}
+
+.section2 .imgbox {
+    margin: -116px 0px 0px 762px;
+}
+
+.section2 .appbuttons{
+    flex-direction:row;
+    display: inline-block;
+    margin-left: 1px;
+    margin-top: 13px;
+}
+
+.section2 .appbuttons .applebutton{
+    margin: 0px 0px 0px 3px;
+}
+
+.section3 .titletbox .title {
+    color: #00275A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 139.13% */
+    
+}
+
+.section3 .titletbox .title h4 {
+    font-family: Poppins;
+    color: #00275A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 139.13% */
+    width: 786px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.section3 .subtitle {
+    width: 974px;
+    color: #212121;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    padding-bottom: 30px;
+}
+
+.section3 .contentbox .title {
+    width: 475px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #0094E7;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+}
+
+.section3 .container {
+    max-width: 1310px;
+    overflow: hidden;
+    background-color: var(--day-colors-blue-50, #FFF);
+    padding: 0;
+    height: 1040px;
+}
+
+.section3 .contentbox .content {
+    width: 540px;
+    height: 62px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.section3 .contentbox {
+    display: flex;
+    margin-top: 110px;
+}
+
+.section3 .content {
+    margin: 0px 0px 12px 145px;
+}
+
+.section3 .content .title {
+    display: none;
+    
+}
+
+.section3 .content ul {
+    margin-bottom: 12px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 187.5% */
+    width: 475px;
+}
+
+.section3 .imgbox {
+    margin: -74px 0px 0px 274px;
+}
+
+.section3 .qrbox {
+    margin-top: 65px;
+}
+
+
+.section4 .titletbox .title h5 {
+    font-family: Poppins;
+    color: #00275A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 139.13% */
+    width: 786px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+
+.section4 .subtitle {
+    width: 974px;
+    color: #212121;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    padding-bottom: 30px;
+}
+
+.section4 .contentbox .title {
+    width: 475px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #0094E7;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+}
+
+.section4 .container {
+    max-width: 1310px;
+    overflow: hidden;
+    background-color: var(--day-colors-blue-50, #F7FCF6);
+    padding: 0;
+    height: 1040px;
+}
+
+.section4 .contentbox .content {
+    width: 540px;
+    height: 62px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 89px 0px  0px 167px;
+}
+
+.section4 .contentbox {
+    display: flex;
+}
+
+.section4 .content {
+    margin: 0px 0px 12px 138px;
+}
+
+.section4 .content .title {
+    margin-bottom: 34px;
+    border-radius:none;
+}
+
+.section4 .content .body {
+    margin-bottom: 5px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 187.5% */
+    width: 490px;
+    padding-left: 40px;
+}
+
+.section4 .imgbox {
+    margin: 0px 0px 0px 762px;
+}
+
+.section4 .appbuttons{
+    flex-direction:row;
+    display: inline-block;
+    margin-left: 1px;
+    margin-top: 23px;
+    padding-left: 20px;
+}
+
+.section4 .appbuttons .applebutton{
+    margin: 0px 0px 0px 3px;
+}
+
+.section4 ul{
+    padding-left: 20px;
+
+}
+
+@media (max-width: 776px) {
+*{
+    margin: 0 auto;
+}
+
+    body, header {
+        max-width: 325px;
+        
+    }
+
+    .container, .wrapper, .section1, .section2, .section3, .section4 {
+        max-width: 325px;
+        max-height: auto;
+    }
+    
+    .ellipsemiddle, .ellipseleft, .arrowbox, .qr {
+        display: none;
+    }
+
+    .wrapper .textbox, .wrapper .appbox {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mainImagesBox {
+        width: 605px;
+        margin-top: 0px;
+    }
+
+    .header .subtitle {
+        margin-bottom: 600px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .qrbox {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .qrbox .appbuttons {
+        margin: 0 auto;
+    }
+
+    .handbox {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        left: -58px;
+        top: -581px;
+        display: block;
+    }
+
+    .handbox  img{
+        max-height: auto;
+    }
+
+    .navigationbox {
+        flex-direction:column;
+        margin-bottom: 55px;
+    }
+
+    .contentbox .imgbox {
+        margin: 0 auto
+    }
+
+    .nav1, .nav2, .nav3, .nav4 {
+        margin: 0 auto;
+        max-height: 150px;
+    }
+
+    .section1 .titlebox {
+        max-width: 325px;
+        max-height: auto;
+    }
+
+    .section1 .title h2 {
+        max-width: 325px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+
+    .section1 .container {
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .section1 .contentbox {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        height: auto;
+    }
+
+    .section1 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 240px;
+    }
+
+    .section1 .contentbox .content {
+        margin: 0;
+        margin-top: 50px;
+        max-width: 325px;
+    }
+
+    .section1 .title {
+        max-width: 325px;
+        text-align: center;
+    }
+
+    .section1 .subtitle {
+        max-width: 325px;
+        text-align: center;
+        
+    }
+    .section1 .contentbox .content ul{
+
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section1 .imgbox {
+        margin-top: 90px;
+    }
+
+    .section2 .titlebox {
+        max-width: 325px;
+        max-height: auto;
+    }
+
+    .section2 .title h3 {
+        max-width: 325px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+    .section2 .container {
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .section2 .contentbox {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        height: auto;
+    }
+
+    .section2 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 870px;
+    }
+
+    .section2 .contentbox .content {
+        margin: 0;
+        margin-top: 50px;
+        max-width: 325px;
+    }
+
+    .section2 .title {
+        max-width: 325px;
+        text-align: center;
+    }
+
+    .section2 .subtitle {
+        max-width: 325px;
+        text-align: center;
+        padding-bottom: 700px;
+        position: relative;
+    }
+
+    .section2 .contentbox .content ul{
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section2 .imgbox {
+        position: absolute;
+        margin: 300px 28.5px 0px 28.5px;
+        z-index: 999;
+    }
+
+    .section2 .appbuttons {
+        margin: 60px 72.5px 0 72.5px;
+    }
+    .section2 .appbuttons .applebutton{
+        margin: 0;
+    }
+
+    .section3 .titlebox {
+        max-width: 325px;
+        max-height: auto;
+    }
+
+    .section3 .title h4 {
+        max-width: 325px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+    .section3 .container {
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .section3 .contentbox {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        height: auto;
+    }
+
+    .section3 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 240px;
+    }
+
+    .section3 .contentbox .content {
+        margin: 0;
+        margin-top: 50px;
+        max-width: 325px;
+    }
+
+    .section3 .title {
+        max-width: 325px;
+        text-align: center;
+    }
+
+    .section3 .subtitle {
+        max-width: 325px;
+        text-align: center;
+        
+    }
+    .section3 .contentbox .content ul{
+
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section3 .imgbox {
+        margin-top: 90px;
+    }
+
+    .section4 .titlebox {
+        max-width: 325px;
+        max-height: auto;
+    }
+
+    .section4 .title h5 {
+        max-width: 325px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+    .section4 .container {
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .section4 .contentbox {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+        height: auto;
+    }
+
+    .section4 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 800px;
+    }
+
+    .section4 .contentbox .content {
+        margin: 0;
+        margin-top: 50px;
+        max-width: 325px;
+    }
+
+    .section4 .title {
+        max-width: 325px;
+        text-align: center;
+    }
+
+    .section4 .subtitle {
+        max-width: 325px;
+        text-align: center;
+        padding-bottom: 700px;
+        position: relative;
+    }
+
+    .section4 .contentbox .content ul{
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+        padding: 0;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section4 .imgbox {
+        position: absolute;
+        margin: 200px 28.5px 0px 28.5px;
+        z-index: 999;
+    }
+
+    .section4 .appbuttons {
+        margin: 25px 72.5px 0 72.5px;
+        padding: 0;
+    }
+
+    .section4 .appbuttons .applebutton{
+        margin: 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 1309px) and (min-width: 779px) {
+    *{
+    margin: 0 auto;
+}
+    
+        body, header {
+        max-width: 768px;
+    }
+
+    .container, .wrapper, .section1, .section2, .section3, .section4 {
+        max-width: 768px;
+        max-height: auto;
+    }
+    
+    .ellipsemiddle, .ellipseleft {
+        display: none;
+    }
+
+    .wrapper .textbox, .wrapper .appbox {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mainImagesBox {
+        margin-top: 0px;
+        width: 605px;
+        
+    }
+
+    .header .subtitle {
+        margin-bottom: 600px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .qrbox {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .qrbox .appbuttons {
+        margin: 0 0 0 12px;
+    }
+
+    .arrowbox img {
+        display: none;
+    }
+    
+    .arrowbox {
+        background-image: url('../img/mainImages/Vector.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        left: 20px;
+        top: -388px;
+        display: block;
+    }
+
+    .arrowText{
+    margin-top: 60px;
+    display: block;
+    }
+
+    .handbox {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        left: 130px;
+        top: -581px;
+        display: block;
+    }
+
+    .handbox  img{
+        max-height: auto;
+    }
+
+    .navigationbox {
+        margin-bottom: 55px;
+    }
+
+    .contentbox .imgbox {
+        margin: 0 auto
+    }
+
+    .nav1, .nav2, .nav3, .nav4 {
+        margin: 0 auto;
+        max-height: 150px;
+    }
+    .nav1,
+    .nav2,
+    .nav3,
+    .nav4,
+    .text {
+        color: var(--day-text-colorful-secondary, #1653A4);
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration-line: underline;
+    }
+
+    .section1 .titlebox {
+        max-width: 768px;
+        max-height: auto;
+    }
+
+    .section1 .title h2 {
+        max-width: 768px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+
+    .section1 .container {
+        display: flex;
+        height: 1040px
+    }
+
+    .section1 .contentbox {
+        display: flex;
+        max-width: 768px;
+        height: auto;
+    }
+
+    .section1 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 240px;
+    }
+
+    .section1 .contentbox .content {
+        margin: 150px 0 0 -60px;
+        max-width: 768px;
+    }
+
+    .section1 .title {
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .section1 .subtitle {
+        max-width: 768px;
+        text-align: center;
+    }
+    .section1 .contentbox .content ul{
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section1 .imgbox {
+        margin-top: 90px;
+        margin-left: 50px;
+    }
+
+    .section2 .titlebox {
+        max-width: 768px;
+        max-height: auto;
+    }
+
+    .section2 .title h3 {
+        max-width: 768px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+
+    .section2 .container {
+        display: flex;
+        height: 1040px;
+    }
+
+    .section2 .contentbox {
+        margin: 0 auto;
+        position: absolute;
+        display: flex;
+        margin-top: 300px;
+        margin-left: 110px;
+    }
+
+    .section2 .contentbox .content {
+        max-width: 768px;
+    }
+
+    .section2 .title {
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .section2 .subtitle {
+        max-width: 768px;
+        text-align: center;
+        position: relative;
+        
+    }
+    .section2 .contentbox .content ul{
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section2 .imgbox {
+        position: absolute;
+        margin: 300px 28.5px 0px 50px;
+        z-index: 999;
+    }
+
+    .section2 .appbuttons {
+        margin: 25px auto;
+        display: flex;
+        
+    }
+    .section2 .appbuttons .applebutton{
+        margin: 0;
+    }
+
+    .section3 .titlebox {
+        max-width: 768px;
+        max-height: auto;
+    }
+
+    .section3 .title h2 {
+        max-width: 768px;
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 30px !important;
+        margin-top: 55px ;
+    }
+
+    .section3 .container {
+        display: flex;
+        height: 1040px
+    }
+
+    .section3 .contentbox {
+        display: flex;
+        max-width: 768px;
+        height: auto;
+    }
+
+    .section3 .contentbox {
+        margin: 0;
+        position: absolute;
+        margin-top: 240px;
+    }
+
+    .section3 .contentbox .content {
+        margin: 150px 0 0 -60px;
+        margin-top: 150px;
+        max-width: 768px;
+    }
+
+    .section3 .title {
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .section3 .subtitle {
+        max-width: 768px;
+        text-align: center;
+        
+    }
+    .section3 .contentbox .content ul{
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .checkIcon {
+        display: none;
+    }
+
+    .section3 .imgbox {
+        margin-top: 90px;
+        margin-left: 50px;
+    }
+
+
+    .section4 .titlebox {
+        max-width: 768px;
+        max-height: auto;
+    }
+
+    .section4 .container {
+        display: flex;
+        
+        height: 1040px;
+    }
+
+    .section4 .contentbox {
+        margin: 0 auto;
+        position: absolute;
+        display: flex;
+        margin-top: 300px;
+        margin-left: 110px;
+    }
+
+    .section4 .contentbox .content {
+        max-width: 768px;
+        margin: 25px 0px 0px 150px;
+    }
+
+    .section4 .title {
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .section4 .subtitle {
+        max-width: 768px;
+        text-align: center;
+        position: relative;
+    }
+    .section4 .contentbox .content ul{
+        margin-bottom: 25px;
+        text-align: center;
+        max-width: 320px;
+        line-height: 20px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .checkIcon {
+        display: none;
+    }
+
+    .section4 .imgbox {
+        position: absolute;
+        margin: 300px 28.5px 0px 50px;
+        z-index: 999;
+    }
+
+    .section4 .appbuttons {
+        margin: 25px auto;
+        display: flex;
+        
+    }
+    .section4 .appbuttons .applebutton{
+        margin: 0;
+    }
+}

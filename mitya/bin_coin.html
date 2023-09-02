@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<script>
+			async function getJSON(api){
+				return fetch(api)
+								.then((response)=>response.json())
+								.then((responseJson)=>{return responseJson});
+			}
+			
+			async function getCoin(){
+				let binance = await getJSON('https://api.coinbase.com/v2/prices/USD/spot');
+				let coinbase = await getJSON('https://api.binance.com/api/v3/ticker/price');
+				
+				let result = new Array();
+				for (let i = 0; i < binance.data.length; i++){
+					for (let j = 0; j < coinbase.length; j++){
+						if (binance.data[i].base == coinbase[j].symbol.replace(/USDT$/,"")){
+							let str = ""
+							str += binance.data[i].base + " : " + binance.data[i].amount;
+							str += " = ";
+							str += coinbase[j].symbol.replace(/USDT$/,"") + " : " + coinbase[j].price;
+							str += "    dif:   "+ (binance.data[i].amount - coinbase[j].price)
+							result.push(str)
+						}
+					}
+				}
+				let body = document.getElementById("body");
+				for (let i = 0; i < result.length; i++){
+								body.innerHTML += "<div>" + result[i] + "</div>";
+				}
+
+				return result;
+			}
+
+			getCoin();
+		
+		</script>
+		<div id='body'>
+		</div>
+	</body>
+</html>

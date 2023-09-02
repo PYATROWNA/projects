@@ -1,0 +1,5 @@
+# Преобразовать переводы строк в CRLF для файлов в папке reactApp/node_modules
+reactApp/node_modules/**/* text eol=crlf
+
+# Преобразовать переводы строк в CRLF для остальных файлов
+* text eol=crlf
